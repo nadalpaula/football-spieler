@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheets/style.less">
+	<title></title>
+</head>
+<body>
+<div class="cont">
+<h1>Grandes Figuras del Futbol</h1>
+	{{#each contenido}}
+	 <img id="jugador" src="{{this.imagen}}"/>
+	 <div class="cont-txt">
+	 <p class="like">{{this.like}}</p>
+	 <img class="icono" data-id="{{this.id}}" src="https://www.freeiconspng.com/uploads/like-icons-png-7.png"/>
+	<p>{{this.titulo}}</p>
+	</div>
+{{/each}}
+	</div>
+
+
+	<script
+ src="https://code.jquery.com/jquery-3.3.1.min.js"
+ crossorigin="anonymous"></script>
+<script type="text/javascript" src="/javascripts/main.js"></script>
+</body>
+</html>
+
